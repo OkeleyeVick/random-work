@@ -12,13 +12,13 @@
 		<div class="nav_et_section_one">
 			<div class="inner container">
 				<nav>
-					<div class="row col-12 m-0 align-items-center justify-content-between d-none d-lg-flex">
-						<div class="col-md-5 p-0">
+					<div class="row col-12 m-0 align-items-center justify-content-between">
+						<div class="col-6 col-md-5 p-0">
 							<div class="d-flex align-items-center">
 								<div class="left">
 									<div class="logo"><img src="./images/logo.png" alt="" class="img-fluid" /></div>
 								</div>
-								<ul class="right d-flex align-items-center">
+								<ul class="right d-flex align-items-center d-none d-lg-inline-flex">
 									<li><a href="">Our Products</a></li>
 									<li><a href="">Customers</a></li>
 									<li><a href="">Pricing</a></li>
@@ -26,7 +26,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-5 p-0">
+						<div class="col-md-5 p-0 d-none d-lg-block">
 							<div class="d-flex align-items-center justify-content-end">
 								<ul class="d-flex align-items-center">
 									<li><a href="">Developers</a></li>
@@ -39,8 +39,38 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-5 p-0 d-lg-none text-end canvas-button">
+							<button
+								class=""
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasExample"
+								aria-controls="offcanvasExample">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="1em"
+									height="1em"
+									preserveAspectRatio="xMidYMid meet"
+									viewBox="0 0 16 16">
+									<path fill="currentColor" d="M16 5H0V4h16v1zm0 8H0v-1h16v1zm0-4.008H0V8h16v.992z" />
+								</svg>
+							</button>
+						</div>
 					</div>
 				</nav>
+
+				<!-- offcanvas starts -->
+
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+					<div class="offcanvas-header">
+						<div>
+							<img src="./images/logo.png" alt="" class="img-fluid" />
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body"></div>
+				</div>
+				<!-- offcanvas ends -->
 
 				<section class="one">
 					<div class="section_one_inner">

@@ -86,6 +86,16 @@ button {
 	color: var(--text-color);
 	white-space: nowrap;
 }
+.nav_et_section_one nav div:has(button) button {
+	background-color: transparent;
+	border: none;
+}
+.nav_et_section_one nav div:has(button) button svg {
+	font-size: 2rem;
+}
+.offcanvas {
+	background-color: var(--light-green);
+}
 main .main-inner {
 	scroll-snap-type: y mandatory;
 }
