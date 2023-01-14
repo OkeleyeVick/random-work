@@ -56,7 +56,36 @@ button {
 	transition: 250ms ease-in;
 	font-size: 14px;
 }
-
+.nav_et_section_one {
+	background-color: var(--light-green);
+}
+.nav_et_section_one nav {
+	padding: 1rem 0;
+}
+.nav_et_section_one .row > div .d-flex {
+	column-gap: 1.2rem;
+}
+.nav_et_section_one ul li a {
+	font-size: 0.85rem;
+}
+.nav_et_section_one {
+	background-image: url(../images/path2830.png);
+	background-repeat: no-repeat;
+	background-position: 100% center;
+}
+.nav_et_section_one .d-flex li.acct a {
+	background-color: var(--green);
+	color: var(--white);
+	border-radius: 6px;
+	padding: 0.6rem 1rem;
+}
+.nav_et_section_one nav .right {
+	column-gap: 1rem;
+}
+.nav_et_section_one nav li a {
+	color: var(--text-color);
+	white-space: nowrap;
+}
 main .main-inner {
 	scroll-snap-type: y mandatory;
 }
@@ -64,10 +93,45 @@ main .main-inner > section {
 	scroll-snap-align: center;
 }
 /* all sections */
-section {
+section:not(section.one) {
 	padding: 5pc 0;
 }
-
+section.one {
+	padding-top: 4pc;
+}
+section.one .section_one_inner .row {
+	row-gap: 3rem;
+}
+section.one .pre-image {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+@media all and (min-width: 768px) {
+	section.one .pre-image {
+		row-gap: 8rem;
+	}
+	section.one .pre-image-inner {
+		margin-top: -2rem;
+	}
+}
+section.one .pre-image-inner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+section.one .pre-image-inner h2 .green-it {
+	color: var(--green);
+}
+section.one .pre-image-inner .link {
+	margin-top: 1rem;
+}
+section.one .pre-image-inner .link a {
+	color: var(--white);
+	background-color: var(--green);
+	border-radius: 6px;
+	padding: 0.6rem 2rem;
+}
 /* .bills section starts */
 section.bills .separate {
 	margin-top: 4rem;
@@ -84,15 +148,23 @@ section.bills .separate > .row:last-child {
 	padding-top: 4rem;
 }
 section.bills .separate .stack .checks {
-	display: flex;
-	flex-direction: column;
-	row-gap: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	margin: 1rem 0;
+	gap: 1rem;
+}
+section.bills .separate .stack .checks li {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+section.bills .separate .stack .checks li span {
+	font-size: 0.85em;
 }
 section.bills .separate .stack li svg {
 	color: var(--green);
 	background-color: var(--light-green);
-	font-size: 2rem;
+	font-size: 1.7rem;
 }
 section.bills .separate .link a {
 	display: flex;
@@ -201,7 +273,7 @@ section.bills .separate .link a svg {
 .bills-access .logos-wrapper-inner {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-	gap: 2.5rem 2rem;
+	gap: 1.5rem 1rem;
 	margin-top: 2.5rem;
 }
 .bills-access .logos-wrapper-inner .each-logo-item {
