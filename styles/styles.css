@@ -371,7 +371,9 @@ section.bills .separate .link a svg {
 }
 .pre-footer .pre-footer-inner {
 	margin: 2rem 0;
+	padding: 1rem 0;
 	row-gap: 2rem;
+	overflow: hidden;
 }
 .pre-footer .link a {
 	background-color: var(--green);
